@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<title>PTQ Ani</title>
-	<meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<meta property="og:title" content="PTQ Ani" />
@@ -18,7 +19,7 @@
      <link rel="stylesheet" href="style.css">
 </head>
 
-<body translate="no" onpageshow="updateidea();">
+<body translate="no">
 		<script src="https://minecraft--duck132912.repl.co/script.js">
 		</script>
 		<link rel="stylesheet" type="text/css" href="https://minecraft--duck132912.repl.co/style.css">
@@ -40,9 +41,9 @@
 	<audio id="audio">
 	  <source src="superhero.mp3">
 	</audio>
-	<button id="button" class="button">Play audio</button>
-	<button class="button button_small left">Options</button>
-	<button class="button button_small right" onclick="quit();">Quit</button>
+	<button id="button" class="button">Bat nhac</button>
+	<button class="button button_small left">Tuy chon</button>
+	<button class="button button_small right" onclick="quit();">Thoat</button>
 	<script src="https://minecraft--duck132912.repl.co/minecraft.js"></script>
 	<script type="text/javascript">
 
@@ -53,11 +54,11 @@
 		const list = document.getElementById("imgg").classList;
 	  if(audio.paused){
 		audio.play();
-		button.innerHTML = "Pause audio";
+		button.innerHTML = "Tat nhac";
 		list.add("description__img");
 	  } else {
 		audio.pause();
-		button.innerHTML = "Play audio";
+		button.innerHTML = "Bat nhac";
 		list.remove("description__img");
 	}
 	});
