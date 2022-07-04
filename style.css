@@ -58,6 +58,7 @@ a {
 	font-size: 1.2vw;
 	outline: 0.2vw solid #000;
 	outline-offset: -0.2vw;
+	border: none!important;
 }
 .button_small {
 	width: 49%;
